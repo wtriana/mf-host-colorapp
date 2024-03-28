@@ -8,7 +8,7 @@ import "./index.css";
 
 const App = () => {
   //estados compartidos simples
-  const { color, colorList, handleChangeColor, handleSubmitSaveColor } = useColors();
+  const { color, colorList, handleChangeColor, handleSubmitSaveColor, handleClickClearColor } = useColors();
 
   return  (
     <>
@@ -18,6 +18,7 @@ const App = () => {
           <div className="col-12 col-md-4">
             <ColorList
               colorList={colorList}
+              handleClickClearColor={handleClickClearColor}
             />
           </div>
           <div className="col-12 col-md-8">
